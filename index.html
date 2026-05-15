@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--
+    Editing guide:
+    1. Most text you may want to change is inside the <main> section below.
+    2. Search for: HERO TEXT, PI SECTION, RESEARCH INTERESTS, LAB FINDINGS, PEOPLE, or CONTACT.
+    3. Replace only the words between tags like <h2>...</h2> or <p>...</p>.
+    4. Leave class names alone unless you also want to change the page design.
+    5. Image files can be swapped by replacing the file name inside img src="...".
+  -->
+  <title>El Khoury Lab | Microglia and Neuroinflammation</title>
+  <meta
+    name="description"
+    content="The El Khoury Lab studies neuroinflammation, Alzheimer's disease, glioblastoma, and transplant infections through the lens of microglial and innate immune biology."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="hero" id="top">
+      <!-- TOP NAVIGATION -->
+      <nav class="topbar">
+        <a class="brand" href="#top">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48" role="img" focusable="false">
+              <circle cx="24" cy="24" r="5"></circle>
+              <path d="M24 19V8"></path>
+              <path d="M24 29v11"></path>
+              <path d="M19 24H8"></path>
+              <path d="M29 24h11"></path>
+              <path d="M20.5 20.5 12 12"></path>
+              <path d="m27.5 27.5 8.5 8.5"></path>
+              <path d="m27.5 20.5 8.5-8.5"></path>
+              <path d="m20.5 27.5-8.5 8.5"></path>
+              <path d="M24 8 20 5"></path>
+              <path d="M24 8 28 5"></path>
+              <path d="M40 24 43 20"></path>
+              <path d="M40 24 43 28"></path>
+              <path d="M8 24 5 20"></path>
+              <path d="M8 24 5 28"></path>
+            </svg>
+          </span>
+          <span>
+            <strong>El Khoury Lab</strong>
+            <em>Microglia, neuroinflammation, and neurodegeneration</em>
+          </span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          Menu
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#research">Research</a>
+          <a href="#findings">Findings</a>
+          <a href="#team">People</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+
+      <div class="hero-grid">
+        <!-- HERO TEXT: edit this short front-page introduction -->
+        <section class="hero-copy">
+          <p class="eyebrow">Massachusetts General Hospital | Harvard Medical School</p>
+          <!-- HERO VIDEO -->
+          <figure class="hero-video-placeholder">
+            <video
+              class="hero-video"
+              autoplay
+              muted
+              loop
+              playsinline
+              controls
+              preload="metadata"
+            >
+              <source src="microglia_green_motion.mp4" type="video/mp4">
+            </video>
+            <figcaption>In vivo microglia (green) responding to a laser injury.</figcaption>
+          </figure>
+          <h1 class="hero-title">How microglia see their world and how they respond to it.</h1>
+          <p class="hero-intro">
+            Microglia are the principal immune cells of the brain and are highly dynamic sentinels of the
+            central nervous system. They survey tissue, sense injury, microbes, and disease-associated signals,
+            and can shift between protective and pathogenic roles depending on context. We think about these responses
+            through three essential microglial functions: sentinel, warrior, and nurturer. This site is meant to
+            introduce those ideas through the work and questions that shape our lab.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#pi-spotlight">Meet the PI</a>
+            <a class="button button-secondary" href="#findings">Read the Science</a>
+          </div>
+        </section>
+
+        <!-- HERO SIDE PANEL: brief summary of the lab -->
+        <aside class="hero-panel">
+          <p class="panel-kicker">Lab Overview</p>
+          <h2>El Khoury Lab</h2>
+          <p>
+            Our lab investigates microglia and innate immune signaling across neurodegeneration,
+            glioma, and transplant-related infection biology, with an emphasis on how the core sensing,
+            host-defense, and homeostatic functions of microglia are preserved, distorted, or repurposed in disease.
+          </p>
+        </aside>
+      </div>
+    </header>
+
+    <main>
+      <!-- PI SECTION -->
+      <section class="section spotlight-grid" id="pi-spotlight">
+        <div class="portrait-card">
+          <img class="portrait-photo" src="Joe_cropped_v5.png" alt="Joseph El Khoury, MD">
+        </div>
+        <div class="spotlight-copy">
+          <p class="eyebrow">Principal Investigator</p>
+          <!-- PI NAME -->
+          <h2>Joseph El Khoury, MD</h2>
+          <!-- PI TITLES -->
+          <div class="pi-titles" aria-label="Professional titles">
+            <p>Principal Investigator, Center for Immunology and Inflammatory Diseases, MGH</p>
+            <p>Associate Physician, Infectious Disease Unit, MGH</p>
+            <p>Associate Professor of Medicine, Harvard Medical School</p>
+          </div>
+          <!-- PI BIO -->
+          <p class="lead">
+            Dr. El Khoury directs a research program focused on microglia, macrophages, and innate immune
+            recognition in neurologic and inflammatory disease. His lab's work bridges mechanistic immunology with
+            clinical questions in neurodegeneration, glioma, and infection, with the goal of
+            understanding how immune sensing pathways can be defined, measured, and ultimately redirected.
+          </p>
+        </div>
+      </section>
+
+      <!-- RESEARCH INTERESTS -->
+      <section class="section" id="research">
+        <div class="section-heading">
+          <p class="eyebrow">Research Interests</p>
+          <h2>We study how the functions of microglia change across neurodegeneration, tumors, and infection.</h2>
+        </div>
+        <div class="cards two-up research-grid">
+          <!-- RESEARCH CARD 1 -->
+          <article class="card topic-card">
+            <div class="inline-figure wide-figure">
+              <button
+                class="figure-zoom"
+                type="button"
+                aria-label="Enlarge microglia functions figure"
+              >
+                <img
+                  src="microglia_functions.webp"
+                  alt="Figure summarizing microglial functions as nurturer, sentinel, and warrior"
+                >
+              </button>
+            </div>
+            <p class="inline-figure-caption">In disease states like glioblastoma, these intrinsic functions become dysregulated and ultimately enable tumor growth.</p>
+            <h3><a class="topic-link" href="#findings-microglia">Microglia in Their Environment</a></h3>
+            <p>
+              We study the core biology of microglia as sentinel, warrior, and nurturer cells that sense their environment,
+              defend tissue, and maintain homeostasis. This includes our foundational work defining the microglial sensome
+              and our continued interest in how microglial states are measured and interpreted.
+            </p>
+          </article>
+          <!-- RESEARCH CARD 2 -->
+          <article class="card topic-card">
+            <div class="inline-figure wide-figure">
+              <button class="figure-zoom" type="button" aria-label="Enlarge amyloid plaque and microglia image">
+                <img src="neurodegeneration_elkhoury_panel_v9.png" alt="Microglia clustered around beta-amyloid deposition in Alzheimer's disease tissue">
+              </button>
+            </div>
+            <p class="inline-figure-caption">Microglia in Alzheimer's disease cluster at sites of beta-amyloid deposition, attempting to clear beta-amyloid.</p>
+            <h3><a class="topic-link" href="#findings-neurodegeneration">Microglia in Neurodegeneration</a></h3>
+            <p>
+              We study how microglial sensing, housekeeping, and defense functions become dysregulated across
+              neurodegenerative disease, including Alzheimer's disease, and how that imbalance contributes to pathology.
+              This includes long-standing work on beta-amyloid, scavenger receptors, and downstream innate immune signaling.
+            </p>
+          </article>
+          <!-- RESEARCH CARD 3 -->
+          <article class="card topic-card">
+            <div class="inline-figure wide-figure">
+              <button class="figure-zoom" type="button" aria-label="Enlarge microglia phagocytosing a glioma cell image">
+                <img src="glioma_phagocytosis_panel_b_v11.png" alt="Microglia in red phagocytosing a glioma cell in blue">
+              </button>
+            </div>
+            <p class="inline-figure-caption">Microglia (red) phagocytosing a glioma cell (blue).</p>
+            <h3><a class="topic-link" href="#findings-glioma">Microglia in Gliomas</a></h3>
+            <p>
+              We showed that glioblastoma can hijack microglial gene expression, suppress tumor sensing and killing programs,
+              and promote a microenvironment favorable for invasion and tumor propagation.
+            </p>
+          </article>
+          <!-- RESEARCH CARD 4 -->
+          <article class="card topic-card">
+            <div class="inline-figure wide-figure infection-figure">
+              <button class="figure-zoom" type="button" aria-label="Enlarge infectious disease figure">
+                <img
+                  src="infectious_cmv_monocyte_cartoon_v7.png"
+                  alt="Cartoon showing CMV interacting with a monocyte through receptor-mediated signaling"
+                >
+              </button>
+            </div>
+            <p class="inline-figure-caption">CMV reshapes monocyte signaling and gene-expression programs tied to viral sensing, inflammation, and phagocytosis.</p>
+            <h3><a class="topic-link" href="#findings-infection">Microglia in Infectious Disease</a></h3>
+            <p>
+              We study innate immune responses to infectious pathogens and their overlap with inflammatory disease biology,
+              including fungal pathogenesis, host-defense receptors such as CD36 and SCARF1, and CMV-driven immune
+              reprogramming in transplantation.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- LAB FINDINGS -->
+      <section class="section findings-section" id="findings">
+        <div class="section-heading">
+          <h2>Work from Our Lab</h2>
+        </div>
+        <div class="findings-groups">
+          <!-- FINDINGS GROUP 1 -->
+          <section class="findings-group" id="findings-microglia">
+            <div class="findings-group-heading">
+              <h3>Microglia in Their Environment</h3>
+              <p>Work focused on how microglia sense, defend, and maintain the brain across changing environments and disease states.</p>
+            </div>
+            <div class="findings-list">
+              <article class="finding-card">
+                <div>
+                  <p class="finding-label">Nature Neuroscience, 2013</p>
+                  <h3>The microglial sensome revealed by direct RNA sequencing</h3>
+                  <a class="pubmed-button" href="https://pubmed.ncbi.nlm.nih.gov/24162652/" target="_blank" rel="noopener noreferrer">PubMed</a>
+                </div>
+                <p>
+                  We identified a quantitative transcriptomic signature for microglia and defined the sensome as a set of
+                  genes encoding the machinery used to sense endogenous ligands and microbes. We also showed that aging
+                  shifts this sensing landscape, with reduced endogenous-ligand recognition and increased host-defense and microbial
+                  sensing programs.
+                </p>
+              </article>
+            </div>
+          </section>
+
+          <!-- FINDINGS GROUP 2 -->
+          <section class="findings-group" id="findings-neurodegeneration">
+            <div class="findings-group-heading">
+              <h3>Microglia in Neurodegeneration</h3>
+              <p>Work examining how the sentinel, warrior, and nurturer functions of microglia become imbalanced in Alzheimer's disease and related neurodegenerative settings.</p>
+            </div>
+            <div class="findings-list">
+              <article class="finding-card">
+                <div>
+                  <p class="finding-label">Nature Neuroscience, 2018</p>
+                  <h3>Microglia in neurodegeneration</h3>
+                  <a class="pubmed-button" href="https://pubmed.ncbi.nlm.nih.gov/30258234/" target="_blank" rel="noopener noreferrer">PubMed</a>
+                </div>
+                <p>
+                  We reframed microglia through three linked functions: sensing, housekeeping, and protection against
+                  injurious self and non-self stimuli. This work positions Alzheimer's disease and related neurodegenerative disorders
+                  as diseases in which those functions become imbalanced, making microglial pathways potential therapeutic checkpoints.
+                </p>
+              </article>
+              <article class="finding-card">
+                <div>
+                  <p class="finding-label">Frontiers in Immunology, 2019</p>
+                  <h3>Partial CX3CR1 deficiency restores amyloid clearance pathways in PS1-APP mice</h3>
+                  <a class="pubmed-button" href="https://pubmed.ncbi.nlm.nih.gov/31849963/" target="_blank" rel="noopener noreferrer">PubMed</a>
+                </div>
+                <p>
+                  We showed that partial reduction of CX3CR1 was associated with lower amyloid burden, improved cognition,
+                  and restoration of neuronal beta-amyloid-degrading pathways in an Alzheimer's-like mouse model, highlighting a tractable
+                  microglial signaling axis with therapeutic implications.
+                </p>
+              </article>
+            </div>
+          </section>
+
+          <!-- FINDINGS GROUP 3 -->
+          <section class="findings-group" id="findings-glioma">
+            <div class="findings-group-heading">
+              <h3>Microglia in Gliomas</h3>
+              <p>Work defining how glioblastoma reshapes microglial behavior into sleepy, exhausted, and tumor-enabling states within the tumor microenvironment.</p>
+            </div>
+            <div class="findings-list">
+              <article class="finding-card">
+                <div>
+                  <p class="finding-label">Journal of Neuroinflammation, 2020</p>
+                  <h3>Glioblastoma hijacks microglial gene expression to support tumor growth</h3>
+                  <a class="pubmed-button" href="https://pubmed.ncbi.nlm.nih.gov/32299465/" target="_blank" rel="noopener noreferrer">PubMed</a>
+                </div>
+                <p>
+                  We found that microglia interacting with tumor-derived extracellular vesicles showed downregulation
+                  of genes involved in sensing tumor cells, sensing danger signals, and tumor killing, alongside upregulation of programs
+                  associated with tumor spread. Similar signatures were observed in human glioblastoma datasets.
+                </p>
+              </article>
+            </div>
+          </section>
+
+          <!-- FINDINGS GROUP 4 -->
+          <section class="findings-group" id="findings-infection">
+            <div class="findings-group-heading">
+              <h3>Microglia in Infectious Disease</h3>
+              <p>Work spanning innate pathogen recognition, fungal host defense, and immune reprogramming during transplantation.</p>
+            </div>
+            <div class="findings-list">
+              <article class="finding-card">
+                <div>
+                  <p class="finding-label">Journal of Experimental Medicine, 2009</p>
+                  <h3>SCARF1 and CD36 in innate recognition of fungal pathogens</h3>
+                  <a class="pubmed-button" href="https://pubmed.ncbi.nlm.nih.gov/19237602/" target="_blank" rel="noopener noreferrer">PubMed</a>
+                </div>
+                <p>
+                  We helped define an evolutionarily conserved fungal sensing pathway in which the scavenger receptors
+                  SCARF1 and CD36 contribute to pathogen recognition, phagocytosis, and innate immune activation.
+                </p>
+              </article>
+              <article class="finding-card">
+                <div>
+                  <p class="finding-label">Science Advances, 2020</p>
+                  <h3>CMV and innate immune dysfunction in transplantation</h3>
+                  <a class="pubmed-button" href="https://pubmed.ncbi.nlm.nih.gov/32494628/" target="_blank" rel="noopener noreferrer">PubMed</a>
+                </div>
+                <p>
+                  We showed that CMV-infected monocytes displayed impaired phagocytosis of fungal pathogens
+                  together with reduced expression of fungal recognition receptors, while simultaneously upregulating antiviral,
+                  pro-inflammatory chemokine, and inflammasome pathways linked to allograft dysfunction and graft-versus-host disease.
+                </p>
+              </article>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- FUTURE DIRECTIONS -->
+      <section class="section future-section">
+        <div class="section-heading">
+          <p class="eyebrow">Future Directions</p>
+          <h2>Where this body of work naturally points next.</h2>
+        </div>
+        <div class="cards two-up">
+          <article class="card future-card">
+            <h3>Mechanism and State Definition</h3>
+            <ul class="plain-list">
+              <li>Map how microglial sensing programs change across aging, tumors, and neurodegeneration.</li>
+              <li>Define which disrupted sensome pathways mark harmful versus protective immune states.</li>
+              <li>Refine disease-specific innate immune profiling beyond broad activation labels.</li>
+            </ul>
+          </article>
+          <article class="card future-card">
+            <h3>Translation and Collaboration</h3>
+            <ul class="plain-list">
+              <li>Identify tractable checkpoints in microglial and monocyte signaling for therapeutic modulation.</li>
+              <li>Connect transcriptomic signatures to patient-facing disease phenotypes and treatment response.</li>
+              <li>Expand collaborative work linking brain immunology with infection biology and clinical medicine.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- PEOPLE -->
+      <section class="section people-section" id="team">
+        <div class="section-heading">
+          <p class="eyebrow">People</p>
+          <h2>Current lab members and alumni.</h2>
+        </div>
+        <div class="people-grid">
+          <article class="people-column">
+            <h3>Current</h3>
+            <div class="member-list">
+              <!-- CURRENT MEMBER 1 -->
+              <!-- CURRENT MEMBER 1 -->
+              <article class="member-card">
+                <img class="person-photo" src="Suzanne_cropped_v2.png" alt="Suzanne Hickman, PhD">
+                <div>
+                  <h4>Suzanne Hickman, PhD</h4>
+                  <p>Senior Research Scientist</p>
+                </div>
+              </article>
+              <!-- CURRENT MEMBER 2 -->
+              <article class="member-card">
+                <img class="person-photo" src="Nathan_cropped_v3.png" alt="Nathan Kingery-Gallagher, MS">
+                <div>
+                  <h4 class="alumni-name-with-link">
+                    <span>Nathan Kingery-Gallagher, MS</span>
+                    <a class="alumni-link-icon" href="https://www.linkedin.com/in/nathan-kingery/" target="_blank" rel="noopener noreferrer" aria-label="Nathan Kingery-Gallagher LinkedIn">
+                      <img src="linkedinlogo.png" alt="">
+                    </a>
+                  </h4>
+                  <p>Senior Research Technologist</p>
+                </div>
+              </article>
+              <!-- CURRENT MEMBER 3 -->
+              <article class="member-card">
+                <img class="person-photo" src="Daniel_cropped_v7.png" alt="Daniel Schmidlin, BA">
+                <div>
+                  <h4 class="alumni-name-with-link">
+                    <span>Daniel Schmidlin, BA</span>
+                    <a class="alumni-link-icon" href="https://www.linkedin.com/in/daniel-schmidlin-1a1220297/" target="_blank" rel="noopener noreferrer" aria-label="Daniel Schmidlin LinkedIn">
+                      <img src="linkedinlogo.png" alt="">
+                    </a>
+                  </h4>
+                  <p>Research Technician</p>
+                </div>
+              </article>
+            </div>
+          </article>
+
+          <article class="people-column">
+            <h3>Alumni</h3>
+            <div class="alumni-list">
+              <!-- ALUMNI: add or remove names here -->
+              <article class="alumni-card">
+                <h4 class="alumni-name-with-link">
+                  <span>Erik Abels, PhD</span>
+                  <a class="alumni-link-icon" href="https://nl.linkedin.com/in/erik-abels-98936a85/" target="_blank" rel="noopener noreferrer" aria-label="Erik Abels LinkedIn">
+                    <img src="linkedinlogo.png" alt="">
+                  </a>
+                </h4>
+              </article>
+              <article class="alumni-card">
+                <h4>Ali Alquraini, PhD</h4>
+              </article>
+              <article class="alumni-card">
+                <h4>Elizabeth Allison, FNP</h4>
+              </article>
+              <article class="alumni-card">
+                <h4 class="alumni-name-with-link">
+                  <span>Uwanda Coleman, RN</span>
+                  <a class="alumni-link-icon" href="https://www.linkedin.com/in/uwanda-coleman-09457934/" target="_blank" rel="noopener noreferrer" aria-label="Uwanda Coleman LinkedIn">
+                    <img src="linkedinlogo.png" alt="">
+                  </a>
+                </h4>
+              </article>
+              <article class="alumni-card">
+                <h4>Mimy Truong, PharmD</h4>
+              </article>
+              <article class="alumni-card">
+                <h4 class="alumni-name-with-link">
+                  <span>Maike Gold, Dr. rer. nat.</span>
+                  <a class="alumni-link-icon" href="https://de.linkedin.com/in/maike-gold-284a24109/" target="_blank" rel="noopener noreferrer" aria-label="Maike Gold LinkedIn">
+                    <img src="linkedinlogo.png" alt="">
+                  </a>
+                </h4>
+              </article>
+              <article class="alumni-card">
+                <h4>Joana Guedes, PhD</h4>
+              </article>
+              <article class="alumni-card">
+                <h4 class="alumni-name-with-link">
+                  <span>Tal Iram, PhD</span>
+                  <a class="alumni-link-icon" href="https://www.linkedin.com/in/tal-iram-46876442/" target="_blank" rel="noopener noreferrer" aria-label="Tal Iram LinkedIn">
+                    <img src="linkedinlogo.png" alt="">
+                  </a>
+                </h4>
+              </article>
+              <article class="alumni-card">
+                <h4 class="alumni-name-with-link">
+                  <span>Michelle Graham, PhD</span>
+                  <a class="alumni-link-icon" href="https://www.linkedin.com/in/michelle-graham-841a9831/" target="_blank" rel="noopener noreferrer" aria-label="Michelle Graham LinkedIn">
+                    <img src="linkedinlogo.png" alt="">
+                  </a>
+                </h4>
+              </article>
+              <article class="alumni-card">
+                <h4 class="alumni-name-with-link">
+                  <span>Saef Izzy, MBChB</span>
+                  <a class="alumni-link-icon" href="https://www.linkedin.com/in/saef-izzy-a8a484a5/" target="_blank" rel="noopener noreferrer" aria-label="Saef Izzy LinkedIn">
+                    <img src="linkedinlogo.png" alt="">
+                  </a>
+                </h4>
+              </article>
+              <article class="alumni-card">
+                <h4>Rebekah Lane, MBChB</h4>
+              </article>
+              <article class="alumni-card">
+                <h4 class="alumni-name-with-link">
+                  <span>Kim Wilkinson, PhD</span>
+                  <a class="alumni-link-icon" href="https://www.linkedin.com/in/kimwilkinson/" target="_blank" rel="noopener noreferrer" aria-label="Kim Wilkinson LinkedIn">
+                    <img src="linkedinlogo.png" alt="">
+                  </a>
+                </h4>
+              </article>
+              <article class="alumni-card">
+                <h4 class="alumni-name-with-link">
+                  <span>Taotao Lao, PhD</span>
+                  <a class="alumni-link-icon" href="https://www.linkedin.com/in/taotao-lao-46593b2a/" target="_blank" rel="noopener noreferrer" aria-label="Taotao Lao LinkedIn">
+                    <img src="linkedinlogo.png" alt="">
+                  </a>
+                </h4>
+              </article>
+              <article class="alumni-card">
+                <h4 class="alumni-name-with-link">
+                  <span>Liza Morsett, BA</span>
+                  <a class="alumni-link-icon" href="https://www.linkedin.com/in/liza-morsett-127aab62/" target="_blank" rel="noopener noreferrer" aria-label="Liza Morsett LinkedIn">
+                    <img src="linkedinlogo.png" alt="">
+                  </a>
+                </h4>
+              </article>
+              <article class="alumni-card">
+                <h4 class="alumni-name-with-link">
+                  <span>Caroline Perner, Dr. med.</span>
+                  <a class="alumni-link-icon" href="https://www.linkedin.com/in/caroline-perner-8902a1217/" target="_blank" rel="noopener noreferrer" aria-label="Caroline Perner LinkedIn">
+                    <img src="linkedinlogo.png" alt="">
+                  </a>
+                </h4>
+              </article>
+              <article class="alumni-card">
+                <h4 class="alumni-name-with-link">
+                  <span>Eric Peden, PhD</span>
+                  <a class="alumni-link-icon" href="https://www.linkedin.com/in/erikpeden/" target="_blank" rel="noopener noreferrer" aria-label="Eric Peden LinkedIn">
+                    <img src="linkedinlogo.png" alt="">
+                  </a>
+                </h4>
+              </article>
+              <article class="alumni-card">
+                <h4>Pritha Sen, MD</h4>
+              </article>
+              <article class="alumni-card">
+                <h4 class="alumni-name-with-link">
+                  <span>Taha Yahya, BA</span>
+                  <a class="alumni-link-icon" href="https://www.linkedin.com/in/taha-yahya-a84aa1274/" target="_blank" rel="noopener noreferrer" aria-label="Taha Yahya LinkedIn">
+                    <img src="linkedinlogo.png" alt="">
+                  </a>
+                </h4>
+              </article>
+              <article class="alumni-card">
+                <h4 class="alumni-name-with-link">
+                  <span>Lingzhi Zhao, PhD</span>
+                  <a class="alumni-link-icon" href="https://www.linkedin.com/in/lingzhi-zhao-7341137/" target="_blank" rel="noopener noreferrer" aria-label="Lingzhi Zhao LinkedIn">
+                    <img src="linkedinlogo.png" alt="">
+                  </a>
+                </h4>
+              </article>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section contact-section" id="contact">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2>Get in touch.</h2>
+        </div>
+        <div class="cards two-up">
+          <!-- CONTACT CARD: recruiting / inquiries -->
+          <article class="card">
+            <h3>Join the Lab</h3>
+            <p>
+              Interested in joining us? Students, postdocs, or other research staff can reach out to Dr. El Khoury at
+              <a href="mailto:jelkhoury@mgh.harvard.edu">jelkhoury@mgh.harvard.edu</a> with a short note about themselves,
+              their interest in the lab, and a resume/CV.
+            </p>
+          </article>
+          <!-- CONTACT CARD: lab location -->
+          <article class="card">
+            <h3>Location</h3>
+            <p>
+              149 13th Street<br>
+              Bay 6114<br>
+              Charlestown, MA 02129
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <p class="institutional-line">El Khoury Lab | Massachusetts General Hospital | Harvard Medical School</p>
+      <p style="width:min(calc(100% - 2rem), 1180px); margin:-1.8rem auto 2.5rem; color:#54646f; font-size:0.78rem; line-height:1.5; text-align:center;">Website created by Daniel Schmidlin.</p>
+    </main>
+  </div>
+
+  <div class="image-modal" id="image-modal" aria-hidden="true">
+    <button class="modal-close" type="button" aria-label="Close enlarged image">Close</button>
+    <img src="" alt="">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
