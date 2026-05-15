@@ -1,5 +1,4 @@
-Launch-ready website files
+GitHub Pages upload folder
 
-Open el-khoury-lab-website.html in a browser to preview locally.
-
-If you upload the site somewhere, upload all files in this folder together.
+Upload all files in this folder to the root of your GitHub Pages repository.
+The homepage file is already named index.html.
